@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jag's Driving School</title>
+    <link rel="icon" href="http://www.helpingldrivers.com/images/learner-plates.gif"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="banner">
+    <center><img src="{{ url_for('static', filename='img/jagsbanner.jpg') }}" class="img-responsive"></img></center>
+  </div>
+    <div class="navbar navbar-inverse navbar-static" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='img/jlogo.png') }}"></img></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="/">Home</a></li>       
+            <li><a href="/areas">Areas</a></li>
+            <li><a href="/prices">Prices</a></li>
+            <li class="active"><a href="/faqs">FAQs</a></li>
+            <li><a href="/testimonial">Testimonial</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Questions</h3>
+          <div class="list">
+            <ul>
+              <li><a href="#one">Do I need to pass the Theory Test before I can start my driving lessons?</a></li>
+              <li><a href="#two">How many driving lessons do you need?</a></li>
+              <li><a href="#three">I know how to drive, can I go straight for my test?</a></li>
+              <li><a href="#four">Do you do intensive driving course?</a></li>
+              <li><a href="#five">What car will I be driving?</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-8 question">
+          <h4 id="one">Do I need to pass the Theory Test before I can start my driving lessons?</h4>
+          <p>No you don’t need to pass the theory test & hazard perception before you take a driving lesson. All you need is a provisional licence. In fact your instructor will gladly assist you on the driving lesson itself. You will need to purchase the official DSA Theory Test & Highway Code book as well as a Hazard Perception PC-CD.<br/>The sooner you pass the theory test the quicker you can book your practical test & get that full licence. To book a theory call 0300 200 1122. Beware of other websites offering to book the test for you – they will probably charge commission. Only use the official Directgov website.</p>
+        
+          <h4 id="two">How many driving lessons do you need?</h4>
+          <p>This is the most frequent question we get asked: beware of any instructor who answers that without seeing you drive! The truth is it’s very difficult to come up with an average because every pupil is different and the number of lessons needed varies greatly. You could do it in 15, you could need 50. The DSA say “Those who pass their driving test have had, on average, about 47 hours of professional training combined with 20 hours of private practice”. Of course some people need less, others more. At jags driving school we realise how expensive learning to drive can be, therefore our aim is to get you your full licence as quickly & as safely as possible. The more passes we get, the happier we are! After 4 or 5 lessons your instructor will have a good indication how many more lessons you will need to reach test standard.</p>
+        
+          <h4 id="three">I know how to drive, can I go straight for my test?</h4>
+          <p>We get asked this a lot too! There is a big difference in knowing how to drive and meeting all the criteria the examiner is looking for on test day. Most experienced drivers would fail their test if they had to take it again today. <br/>Each time you make a minor fault the examiner will make a / slash in the relevant white box. Get more than 3 in one box & you’ve failed. Get more than 15 minor faults over all & you’ve failed. One Serious or Dangerous is a also a failure. Our instructors want you to pass first time, so we need to make sure you’re ready. Apart from the fact instructors are assessed on their passes & failures, it’s also very expensive to keep taking your test & failing. Much better to spend the money on lessons to increase your chance of passing! So if you have a test already booked, we will give you an assessment lesson to see if you have a good chance of passing. The instructor will tell you how many lessons you will need to take before they agree to take you for your test.</p>
+        
+          <h4 id="four">Do you do intensive driving course?</h4>
+          <p>If you need to get passed quickly, we can offer lessons relatively intensively. The good news is they are same price as the normal lessons. Some driving schools offer a fixed fee & a test at the end of the week for an extortionate price. We don’t agree with that. The trouble is the number of lessons needed varies greatly from person to person. You could pay for 30 lessons in a week & only need 15. We want to give you the lessons you need and no more. So your first lesson will be an assessment to see what you need, so the package you pay will be tailor-made to suit your requirements. Bear in mind you need to pass your theory test before you can book your practical test & everyone, including driving schools, is at the mercy of the DSA practical test booking dates.</p>
+          <p>Ring us at your convenience on 0777 9000 884, 0777 9000 866.</p>
+        
+          <h4 id="five">What car will I be driving?</h4>
+          <p>It depends on what car the driving instructor has available. The size of the car does not matter you will have to get used to a bigger car at one stage or another, better sooner than later whilst under professional instruction. All cars will be roomy enough to provide comfort to the tallest of pupils. They are clean & air conditioned. All of our cars are fitted with dual controls, so you don’t need to worry about forgetting where the brake is!</p>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="footer">
+      <div class="container">
+      <div class="col-md-12">
+        <p>Phone: 0777 9000 884 & 00777 9000 866</p>
+        <p>Email: <a href="mailto:info@jagsdrivingschool.com">info@jagsdrivingschool.com</a></p>
+        <div class="footerlist">
+          <ul>
+            <li><a href="https://www.facebook.com/jafar.salami.35">Facebook <i class="fa fa-facebook-official" aria-hidden="true" style="color:#4099FF;"></i></a></li>
+            <li><a href="https://twitter.com/jagsinfo">Twitter <i class="fa fa-twitter" aria-hidden="true" style="color:#4099FF;"></i></a></li>
+          </ul>
+        </div>
+        <p>© 2016 Jag's Driving School</p>
+        <p>Created by <a href="http://josalami.pythonanywhere.com/" style="color:white;">Ja'far Salami</a></p>
+      </div>
+    </div>
+    </div>
+     <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+</body>
+</html>

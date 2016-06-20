@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+  {% if success %}
+    <h3 style="padding-bottom:500px;">Thank you for your message. We'll get back to you shortly.</h3>
+  
+  {% else %}  
+    <h3 style="text-align:center;">The contact details for Jag’s Driving School are listed below, alternatively please feel free to use our quick and easy contact form.</h3>
+   
+   <div class="container">
+      <div class="col-md-4">
+         &nbsp&nbsp&nbsp
+      </div> 
+      
+      <div class="col-md-4" >
+      {% for message in form.name.errors %}
+        <div class="flash">{{ message }}</div>
+      {% endfor %}
+      
+      {% for message in form.email.errors %}
+        <div class="flash">{{ message }}</div>
+      {% endfor %}
+      
+      {% for message in form.subject.errors %}
+        <div class="flash">{{ message }}</div>
+      {% endfor %}
+      
+      {% for message in form.message.errors %}
+        <div class="flash">{{ message }}</div>
+      {% endfor %}
+      
+      <form action="{{ url_for('contact') }}" method=post style="text-align: left;" >
+        {{ form.hidden_tag() }}
+        
+        {{ form.name.label }}
+        {{ form.name }}
+        
+        {{ form.email.label }}
+        {{ form.email }}
+        
+        {{ form.subject.label }}
+        {{ form.subject }}
+        
+        {{ form.message.label }}
+        {{ form.message }}
+        
+        {{ form.submit }}
+      </form>
+      <br><br>
+      </div>
+      <div class="col-md-4">
+        &nbsp&nbsp&nbsp&nbsp
+      </div>
+      <br/><br/><br>
+   </div>
+    
+    
+     <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+
+  
+  {% endif %}
+{% endblock %} 

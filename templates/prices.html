@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jag's Driving School</title>
+    <link rel="icon" href="http://www.helpingldrivers.com/images/learner-plates.gif"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="banner">
+    <center><img src="{{ url_for('static', filename='img/jagsbanner.jpg') }}" class="img-responsive"></img></center>
+  </div>
+    <div class="navbar navbar-inverse navbar-static" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='img/jlogo.png') }}"></img></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="/">Home</a></li>       
+            <li><a href="/areas">Areas</a></li>
+            <li class="active"><a href="/prices">Prices</a></li>
+            <li><a href="/faqs">FAQs</a></li>
+            <li><a href="/testimonial">Testimonial</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    
+    <div class="container prices">
+      <div class="col-md-12">
+        <h1 style="text-align:center;color:black;">Prices</h1>
+        <p style="font-size:17px;color:black;">Unlike some other schools, you don’t need to pay for anything until the instructor turns up for your first lesson. Then you can choose what deal you want from our prices below.</p>
+        <p><span style="color:red;font-weight:bold;">NO CATCH WITH OUR SPECIAL OFFER!</span> Watch out for some schools offering a deal then holding your money back until the test day. At jags driving school we hope you will love having lessons with us so much, you will <span style="color:red;font-weight:bold;">WANT</span> to continue with us right up until test day, so we don't insist on holding anything back. </p>
+        <p>Double lessons, refreshers & intensive courses are all contained within these prices. </p>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="hvr-grow">
+          <div class="well">
+            <h3>Manual Lessons</h3>
+            <hr/>
+            <p>WEEKDAYS until 6pm</p>
+            <hr/>
+            <p>1 Lesson	£20.00 - P/H</p>
+            <hr/>
+            <p>5 lessons	£95.00</p>
+            <hr/>
+            <p>10 Lessons	£185.00</p>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="well">
+            <h3>Manual Lessons</h3>
+            <hr/>
+            <p>EVENINGS & WEEKENDS</p>
+            <hr/>
+            <p>1 Lesson	£21.00 - P/H</p>
+            <hr/>
+            <p>5 lessons	£100.00</p>
+            <hr/>
+            <p>10 Lessons	£190.00</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="well">
+            <h3>Manual Lessons</h3>
+            <hr/>
+            <p>STUDENTS & NURSES *WEEKDAYS UNTIL 6PM</p>
+            <hr/>
+            <p>1 Lesson	£19.45 - P/H</p>
+            <hr/>
+            <p>5 lessons	£92.00</p>
+            <hr/>
+            <p>10 Lessons	£181.00</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="well">
+            <h3>Manual Lessons</h3>
+            <hr/>
+            <p>STUDENTS & NURSES *EVENINGS & WEEKENDS</p>
+            <hr/>
+            <p>1 Lesson	£21.45 - P/H</p>
+            <hr/>
+            <p>5 lessons	£95.00</p>
+            <hr/>
+            <p>10 Lessons	£185.00</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="well">
+            <h3>Automatic Lessons</h3>
+            <hr/>
+            <p>WEEKDAYS until 6pm</p>
+            <hr/>
+            <p>1 Lesson	£22.95 - P/H</p>
+            <hr/>
+            <p>5 lessons	£110.00</p>
+            <hr/>
+            <p>10 Lessons	£215.00</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="well">
+            <h3>Automatic Lessons</h3>
+            <hr/>
+            <p>EVENINGS & WEEKENDS</p>
+            <hr/>
+            <p>1 Lesson	£24.95 - P/H</p>
+            <hr/>
+            <p>5 lessons	£120.00</p>
+            <hr/>
+            <p>10 Lessons	£230.00</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="well">
+            <h3>Pass Plus</h3>
+            <hr/>
+            <p>For people who have just recently passed their test</p>
+            <hr/>
+            <p>6 Hour Course	£140.00</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="well">
+            <h3>Approved Driving Instructor (ADI)</h3>
+            <hr/>
+            <p>Part 1 - FREE</p>
+            <hr/>
+            <p>Part 2 - £22.50 Per Hour</p>
+            <hr/>
+            <p>Part 3 - £22.50 Per Hour</p>
+            <hr/>
+            <p>ADI Check Test Available</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container paratext">
+      <h3 style="color:black;">Prices</h3>
+      <p>DSA Theory & Hazard Perception Test fee £31.00<br/>
+      DSA Practical Test fee £62.00 <br/>
+      To book a theory or practical test ring the DSA on <span style="color:red;font-weight:bold;">0300 200 1122</span></p>
+    </div>
+    
+    <div class="container paratext">
+      <h3 style="color:black;">Day of Test Vehicle Hire Packages</h3>
+      <p>This includes 1 hour’s tuition before the test, hire of the vehicle & insurance during the test, and transport to and from the test centre depending on area.* <span style="color:red;font-weight:bold;">£69.00 Fixed Fee, £75.00 Short Notice (within 2 weeks) & extended.</span></p>
+      <p>*To hire our vehicle the bare minimum requirement is 1 hour’s assessment lesson on a date well in advance of your test, plus the number of additional lessons the instructor advises you need in order to meet all the requirements to pass your test. This is at the absolute discretion of your instructor who reserves the right to refuse to take you if you are not deemed to be at test standard.</p>
+    </div>
+    
+    <div class="container paratext">
+      <h3 style="color:black;">Fees & Appointments</h3>
+      <p>Payments - Fees are payable, in advance, by way of cash at the first appointment, the fees for that and the next appointment are then payable. If you pay by cash, change is normally available, otherwise, you might be asked to carry over some of the balance to your next appointment. Jags driving school does not offer to take payment by credit or debit card because the card suppliers charge a fee for the facility, and this would have to be added to the lesson fee.</p>
+      <p style="color:red;font-weight:bold;">Cancellations - 24hrs notice is required for changes or cancellations, including public holidays, otherwise the full fee is payable unless your instructor, who takes a flexible approach, decides otherwise.</p>
+      <p>Non-attendance constitutes a late cancellation. Whilst using discretion, Jags driving school is not responsible for fees lost due to sickness, public transport delays or other causes of late cancellations. If the instructor cancels your appointments, you shall not be charged.</p>
+      <br>
+    </div>
+    
+    <div class="footer">
+      <div class="container">
+      <div class="col-md-12">
+        <p>Phone: 0777 9000 884 & 00777 9000 866</p>
+        <p>Email: <a href="mailto:info@jagsdrivingschool.com">info@jagsdrivingschool.com</a></p>
+        <div class="footerlist">
+          <ul>
+            <li><a href="https://www.facebook.com/jafar.salami.35">Facebook <i class="fa fa-facebook-official" aria-hidden="true" style="color:#4099FF;"></i></a></li>
+            <li><a href="https://twitter.com/jagsinfo">Twitter <i class="fa fa-twitter" aria-hidden="true" style="color:#4099FF;"></i></a></li>
+          </ul>
+        </div>
+        <p>© 2016 Jag's Driving School</p>
+        <p>Created by <a href="http://josalami.pythonanywhere.com/" style="color:white;">Ja'far Salami</a></p>
+      </div>
+    </div>
+    </div>
+     <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script> 
+</body>
+</html>

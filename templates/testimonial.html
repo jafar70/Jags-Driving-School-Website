@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jag's Driving School</title>
+    <link rel="icon" href="http://www.helpingldrivers.com/images/learner-plates.gif"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="banner">
+    <center><img src="{{ url_for('static', filename='img/jagsbanner.jpg') }}" class="img-responsive"></img></center>
+  </div>
+    <div class="navbar navbar-inverse navbar-static" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='img/jlogo.png') }}"></img></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="/">Home</a></li>       
+            <li><a href="/areas">Areas</a></li>
+            <li><a href="/prices">Prices</a></li>
+            <li><a href="/faqs">FAQs</a></li>
+            <li class="active"><a href="/testimonial">Testimonial</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <h1 style="text-align:center;color:black;">Testimonial</h1>
+        <blockquote>
+          <p>“ I passed my driving test with flying colours thanks to (jag). He has been very patient and very helpful throughout my lessons. He taught me all the skills that was needed to pass my test but the most important thing is that he made me become a good driver for life. I would recommend his driving school to all of you. ”</p>
+          <footer>Tazneem</footer>
+        </blockquote>
+        <blockquote class="blockquote-reverse">
+          <p>	“ Jag is a really good driving instructor, very helpful and full of patients. One of the great thing about him is that he works around your lifestyle so finding dates and timing for lessons are never a problem. Moving onto his teaching skills all I can say is that he is brilliant at it, you can learn so much in such a short time. The methods he uses for teaching manoeuvres are simple to learn and smart at the same time. I highly recommend him to anyone wanting to learn to drive. ”</p>
+          <footer>Joban Singh</footer>
+        </blockquote>
+        <blockquote>
+          <p>	“ I was taught how to drive by jag, and my experience of that was great and not only was he a good teacher he also had alot of patints , he became a good friend where it was then much more easier to sit in a car and drive with confidence. He is great at making you master the maneuvers as he did with me and the whole driving experience with him was good as he taught in the most professional way and guaranted that he will take your novice driving skills to the next standard. ”</p>
+          <footer>Harmit Singh</footer>
+        </blockquote>
+        <blockquote class="blockquote-reverse">
+          <p>	“ Having never driven a car before, learning how to drive proved a challenging but rewarding experience. My instructor’s teaching and explaining methods were straightforward and simple to follow. On occasions where I did not understand specific manoeuvres, my instructor sought other ways to explain and develop my understanding of them.<br><br>My instructor Jag helped me identify my strengths as well as mistakes and errors that I made, and helped me correct them. His timing was flexible, allowing me to book my lessons around my studies. My driving instructor Jag was brilliant, very patient and supportive and I strongly recommend him to anyone wanting to learn how to drive. ”</p>
+          <footer>H.Kaur</footer>
+        </blockquote>
+        <blockquote>
+          <p>	“ I previously was learning to drive with another tutor but found his teaching methods unhelpful. I made slow progress and felt that I was not going anywhere in terms of advancement.<br/><br/>
+          I then decided to learn with Jag's driving School. It was only a matter of time before I made good progress! Jag has a teaching method that is reassuring and positive. He made me feel confident and in time, I found myself reaching goals that I felt were impossible to reach!<br/><br/>
+          Ultimately, I passed my practical driving test which was made more possible with Jag's excellent teaching methods. I can only say, without hesitation, that he always wants his students to pass sincerely. ”</p>
+          <footer>Arti</footer>
+        </blockquote>
+      </div>
+    </div>
+    
+    
+    <div class="footer">
+      <div class="container">
+      <div class="col-md-12">
+        <p>Phone: 0777 9000 884 & 00777 9000 866</p>
+        <p>Email: <a href="mailto:info@jagsdrivingschool.com">info@jagsdrivingschool.com</a></p>
+        <div class="footerlist">
+          <ul>
+            <li><a href="https://www.facebook.com/jafar.salami.35">Facebook <i class="fa fa-facebook-official" aria-hidden="true" style="color:#4099FF;"></i></a></li>
+            <li><a href="https://twitter.com/jagsinfo">Twitter <i class="fa fa-twitter" aria-hidden="true" style="color:#4099FF;"></i></a></li>
+          </ul>
+        </div>
+        <p>© 2016 Jag's Driving School</p>
+        <p>Created by <a href="http://josalami.pythonanywhere.com/" style="color:white;">Ja'far Salami</a></p>
+      </div>
+    </div>
+    </div>
+     <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+</body>
+</html>

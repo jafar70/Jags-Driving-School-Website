@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jag's Driving School</title>
+    <link rel="icon" href="http://www.helpingldrivers.com/images/learner-plates.gif"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="banner">
+    <center><img src="{{ url_for('static', filename='img/jagsbanner.jpg') }}" class="img-responsive"></img></center>
+  </div>
+    <div class="navbar navbar-inverse navbar-static" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='img/jlogo.png') }}"></img></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="active"><a href="/">Home</a></li>       
+            <li><a href="/areas">Areas</a></li>
+            <li><a href="/prices">Prices</a></li>
+            <li><a href="/faqs">FAQs</a></li>
+            <li><a href="/testimonial">Testimonial</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    
+    <div class="container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="{{ url_for('static', filename='img/jags1.jpg') }}" alt="student1"> 
+            </div>
+            
+            <div class="item">
+              <img src="{{ url_for('static', filename='img/jags2.jpg') }}" alt="student2">
+            </div>
+            
+            <div class="item">
+              <img src="{{ url_for('static', filename='img/jags3.jpg') }}" alt="student3">
+            </div>
+            
+            <div class="item">
+              <img src="{{ url_for('static', filename='img/jags4.jpg') }}" alt="student4">
+            </div>
+            
+            <div class="item">
+              <img src="{{ url_for('static', filename='img/jags5.jpg') }}" alt="student5">
+            </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div> <!-- end of carousel slideshow-->
+    </div>
+    </div>
+    
+    <div id="provide">
+      <div class="container" style=" background-image: url('http://www.msaltd.co.uk/msa/media/images/fade-large.png');">
+        <h2>Book Your First Lesson Today!</h2>
+        <h2><span style="color:red;">Phone:</span> 0777 9000 884 & 00777 9000 866</h2>
+        <h2>Book A Lesson <span style="color:red;">Click Here</span></h2>
+      </div>
+    </div> 
+    
+    <div class="bbody">
+      <div class="container provide2">
+        <div class="row">
+          <div class="col-md-4">
+            <h3 style="color:red;">Here at Jag's Driving School we provide:</h3>
+            <div id="list">
+              <ul>
+                <li>Manual Lessons</li>
+                <li>Automatic Lessons</li>
+                <li>Test Prices</li>
+                <li>Day of Test Vehicle</li>
+                <li>Hire Package</li>
+                <li>Fees & Appointments</li>
+                <li>Male & Female Driver</li>
+                <li>Part 1, 2, 3 Instructor Traning</li>
+                <li>Fleet Traning</li>
+              </ul>
+              <h4 style="color:red;">Language</h4>
+              <ul>
+                <li>Urdu</li>
+                <li>Punjabi</li>
+                <li>English</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <h3 style="color:red;text-align:center;">About Jag's Driving School</h3>
+              
+                    <p class="body_text">With the current economic climate we've noticed an avalanche of new Approved Driving Instructors (ADIs) &amp; Potential Driving Instructors (PDIs) on the roads, all offering too- good- to- be- true deals. It's a minefield out there. How do you know which school is worth going with?</p>
+                    <p class="body_text">At Jags driving school I believe that you should enjoy learning to drive.<br />
+                      <br />
+                      Once you have passed your test you will have gained a skill for life. I will work hard to make sure that your driving lessons are fun as well as informative because if you enjoy your lessons you will learn quicker.<br />
+                      <br />
+                      I will take the time to discuss with you any previous driving experience you may have had and what your specific requirements are. I am particularly patient with my pupils and have helped many nervous people pass their test!<br />
+                      I am fully qualified, licensed and registered with the Driving Standards Agency (DSA), following strict rules and regulations laid down by them. <span class="body_text_red" style="font-weight:bold;">I am also a (DSA) approved fleet trainer and provide Instructor training,</span></p>
+                    <p><span class="body_text">So, why not get in touch today and book your special offer lessons and get on the road to passing your driving test fast with Jags driving school,</span><br />
+                      <br />
+                        <span class="body_text" style="color:black;font-weight:bold;">Thank You for visiting my site, Jag</span><br />
+                    </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container video" style="text-align:center;">
+      <div class="col-md-12">
+        <h2 class="driving_title">Driving Test Tips</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LWiDTblyrl8"></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="container">
+      <div class="col-md-12">
+        <p>Phone: 0777 9000 884 & 00777 9000 866</p>
+        <p>Email: <a href="mailto:info@jagsdrivingschool.com">info@jagsdrivingschool.com</a></p>
+        <div class="footerlist">
+          <ul>
+            <li><a href="https://www.facebook.com/jafar.salami.35">Facebook <i class="fa fa-facebook-official" aria-hidden="true" style="color:#4099FF;"></i></a></li>
+            <li><a href="https://twitter.com/jagsinfo">Twitter <i class="fa fa-twitter" aria-hidden="true" style="color:#4099FF;"></i></a></li>
+          </ul>
+        </div>
+        <p>© 2016 Jag's Driving School</p>
+        <p>Created by <a href="http://josalami.pythonanywhere.com/" style="color:white;">Ja'far Salami</a></p>
+      </div>
+    </div>
+    </div>
+     <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jag's Driving School</title>
+    <link rel="icon" href="http://www.helpingldrivers.com/images/learner-plates.gif"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="contactus">
+  <div id="banner">
+    <center><img src="{{ url_for('static', filename='img/jagsbanner.jpg') }}" class="img-responsive"></img></center>
+  </div>
+    <div class="navbar navbar-inverse navbar-static" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='img/jlogo.png') }}"></img></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="/">Home</a></li>       
+            <li><a href="/areas">Areas</a></li>
+            <li><a href="/prices">Prices</a></li>
+            <li><a href="/faqs">FAQs</a></li>
+            <li><a href="/testimonial">Testimonial</a></li>
+            <li class="active"><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <img src="{{ url_for('static', filename='img/contactusbanner.png') }}" alt="contact us banner" class="img-responsive"></img>
+    </div>
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+    
+    <div class="contactinfo">
+      <h3>Contact Information</h3>
+      <h4>Bill Plant Driving School<br>
+      Canalside House<br>
+      7 Charter Road<br>
+      Ripon<br>
+      North Yorkshire<br>
+      HG4 1AJ<br><br>
+      Call back text 'Drive' to 82010</h4>
+    </div>
+    
+    <div class="footer">
+      <div class="container">
+      <div class="col-md-12">
+        <p>Phone: 0777 9000 884 & 00777 9000 866</p>
+        <p>Email: <a href="mailto:info@jagsdrivingschool.com">info@jagsdrivingschool.com</a></p>
+        <div class="footerlist">
+          <ul>
+            <li><a href="https://www.facebook.com/jafar.salami.35">Facebook <i class="fa fa-facebook-official" aria-hidden="true" style="color:#4099FF;"></i></a></li>
+            <li><a href="https://twitter.com/jagsinfo">Twitter <i class="fa fa-twitter" aria-hidden="true" style="color:#4099FF;"></i></a></li>
+          </ul>
+        </div>
+        <p>© 2016 Jag's Driving School</p>
+        <p>Created by <a href="http://josalami.pythonanywhere.com/" style="color:white;">Ja'far Salami</a></p>
+      </div>
+    </div>
+    </div>
+     <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+</body>
+</html>
